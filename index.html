@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(https://media.tenor.com/images/d953de0869a70c0b3cb312eea39b001e/tenor.gif);
+           background-size: cover;
+            background-repeat: no-repeat;
+            background-clip: padding-box;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-wrap: wrap;
+            background-position: center;
+
+        }
+        #content-box{
+            width: 400px;
+            height: 550px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.774);
+            box-sizing: border-box;
+            box-shadow: -20px -20px 44px red, -20px -20px 44px red, -20px -20px 44px red, -20px -20px 44px red;
+            border-radius: 18px;
+        }
+        #calculate{
+            width: 150px;
+            height: 47px;
+            background-color: pink;
+            color: azure;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+           
+        }
+        .main-heading{
+            color: rgb(254, 253, 253);
+            -webkit-text-stroke-width: 1.2px;
+            -webkit-text-stroke-color: red;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: inset 2px 2px 6px pink,inset 2px 2px 6px pink,inset 2px 2px 6px pink,inset 2px 2px 6px pink;
+        }
+        .instruction{
+            color: pink;
+            -webkit-text-stroke-width: 0.1px;
+            -webkit-text-stroke-color: red;
+            text-shadow: 3px 3px 8px black, 3px 3px 8px black, 3px 3px 8px black, 3px 3px 8px black, 3px 3px 8px black;
+        }
+        label{
+            height: 20px;
+            font-size: 17px;
+        }
+        input{
+            color:rgb(6, 6, 6);
+            background-color: rgb(255, 192, 225);
+            border: 0.3px solid rgb(244, 49, 82);
+            height: 20px;
+            font-size: 17px;
+        }
+        input:hover{
+            scale: 1.04;
+            border-color: aqua;
+           
+        }
+        #calculate:hover {
+           background-color: rgb(255, 0, 111);
+           scale: 1.03;
+           color: aqua;
+        }
+       #result-percentage{
+         font-size: 25px;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color: rgb(122, 0, 0);
+         text-shadow: 0.5px 0.5px 3px red,0.5px 0.5px 3px red,0.5px 0.5px 3px red,.5px .5px 3px red;
+       }
+       .aao{
+        height: 100px;
+        width: 300px;
+        color: blue;
+        font-size: xx-large;
+        z-index: 10;
+       }
+       
+    </style>
+</head>
+<body id="body">
+  <div id="content-box">
+    <h1 class="main-heading">Love Calculator</h1>
+    <p class="instruction">Enter your name and your's crushes name to see the chance that this relationship will work out:</p>
+    <br>
+    <label for="your-name"> Your name :</label>
+    <input type="text" id="your-name" name="your-name"><br><br>
+    <label for="crush-name"> Crush Name: </label>
+    <input type="text" id="crush-name" name="crush-name">
+    <br><br>
+    <button id="calculate"> Calculate</button>
+    <h2 id="result-massage"></h2>
+    <p id="result-percentage"></p>
+  </div> 
+ <!-- <div>
+    
+    <video src="WhatsApp Video 2024-02-14 at 10.29.31 AM.mp4" controls="auto" height="100%" width="100%"
+      >
+       
+    </video>
+ </div> -->
+  <script>
+   window.onload=function() {
+       let button=document.getElementById("calculate");
+       button.addEventListener("click",calculate)
+   }
+//    function calculatelove(){
+//       let yourname=document.getElementById("your-name").value;
+//       let crushname=document.getElementById("crush-name").value;
+//       let a=Math.floor(Math.random()*101);
+//       let massage=document.getElementById("result-massage");
+//       let perctange=document.getElementById("result-percentage");
+//       if(yourname=="Akash")a=99;
+//       if(yourname=="Awijeet") a=0;
+//       if(yourname=="AWIJEET") a=0;
+//       if(yourname=="awijeet") a=0;
+//       if(yourname=="AWijeet") a=0;
+//       if(yourname=="AwijeeT") a=0;
+//       if(yourname=="AWIjeet") a=0;
+//       if(yourname=="AWIJeet") a=0;
+//       if(yourname=="AWIJEet") a=0;
+//       if(yourname=="AWIJEEt") a=0;
+//       if(yourname !="" && crushname!=""){
+       
+//         massage.innerHTML= yourname+ " and " +crushname+" chance of love "
+//         perctange.innerHTML= a.toString() +"% ."
+        
+//       }
+//    }
+   function calculate(){
+       let body=document.getElementById("body");
+      body.innerHTML= `<div style="height="100%" width="100%"">
+        <h2 style="color:red;z-index:10; text-align:center; margin-top:2px;"> Never Going to forget the day </h2>
+        <h3 style="color:red;z-index:10; text-align:center; margin-top:2px;"> The Pulwama attack </h3>
+        <video src="WhatsApp Video 2024-02-14 at 10.29.31 AM.mp4" controls="auto" autoplay height="100%" width="100%" > </video></div>`;
+   }
+  </script> 
+</body>
+</html>
